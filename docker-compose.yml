@@ -1,0 +1,19 @@
+services:
+  php:
+    build: .
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    env_file:
+      - .env
+    volumes:
+      - .:/var/www/html
+
+  db:
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3307:3306"
