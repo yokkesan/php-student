@@ -2,7 +2,7 @@ services:
   php:
     build: .
     ports:
-      - "8000:80"
+      - "8010:80"
     depends_on:
       - db
     env_file:
@@ -16,4 +16,4 @@ services:
     env_file:
       - .env
     ports:
-      - "3307:3306"
+      - "3310:3306"
