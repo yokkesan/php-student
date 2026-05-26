@@ -49,7 +49,7 @@ docker compose up --build
 ## 動作確認
 
 ブラウザで下記へアクセスしてください。
-http://localhost:8000
+http://localhost:8010
 
 下記の文字が表示されれば成功です。
 
@@ -69,3 +69,6 @@ Ctrl + C
 ```bash
 docker compose down
 ```
+
+## コマンド
+docker exec -it php-student-php-1 bash
