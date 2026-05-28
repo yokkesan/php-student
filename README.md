@@ -71,4 +71,15 @@ docker compose down
 ```
 
 ## コマンド
-docker exec -it php-student-php-1 bash
+docker exec -it php-student-db-1 bash
+
+
+## MySQL クライアント
+mysql -u root -p
+
+## DB選択
+USE sample_db;
+
+
+## 一発で sample_db に入るなら：
+mysql -h db -u root -ppassword sample_db
